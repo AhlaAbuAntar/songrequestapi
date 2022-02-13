@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
 
 app.get('/', (req, res) => {
     res.send('Hello there, this is my API');
@@ -11,5 +10,3 @@ app.get('/', (req, res) => {
 const emoRouter = require('./routes/emo');
 
 app.use('/emo', emoRouter);
-
-app.listen(PORT);
