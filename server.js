@@ -7,8 +7,12 @@ app.get('/', (req, res) => {
     console.log('Starting API');
 });
 
-const emoRouter = require('./routes/emo');
 
+//////////////////Routes//////////////////
+const emoRouter = require('./routes/emo');
 app.use('/emo', emoRouter);
 
+const alphaRouter = require('./routes/alpha')
+app.use('/alpha', alphaRouter)
+//////////////////////////////////////////
 app.listen(process.env.PORT || 6969);
