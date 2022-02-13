@@ -11,4 +11,4 @@ const emoRouter = require('./routes/emo');
 
 app.use('/emo', emoRouter);
 
-app.listen(8052);
+app.listen(process.env.PORT || 6969);
