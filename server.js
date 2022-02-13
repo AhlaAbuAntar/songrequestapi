@@ -10,5 +10,3 @@ app.get('/', (req, res) => {
 const emoRouter = require('./routes/emo');
 
 app.use('/emo', emoRouter);
-
-app.listen(80);
