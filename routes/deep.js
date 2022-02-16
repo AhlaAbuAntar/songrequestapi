@@ -1,10 +1,10 @@
 const express = require('express');
-const emo = require('../tracklists/emo.json');
+const deep = require('../tracklists/deep.json');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.json(emo);
-    console.log('sending emotional song request');
-})
+    res.json(deep);
+    console.log('sending deep song request');
+});
 
 module.exports = router;

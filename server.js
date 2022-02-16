@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 
 
 //////////////////Routes//////////////////
-const emoRouter = require('./routes/emo');
+const emoRouter = require('./routes/deep');
 app.use('/emo', emoRouter);
 
 const alphaRouter = require('./routes/alpha')
