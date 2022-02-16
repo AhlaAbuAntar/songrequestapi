@@ -1,16 +1,15 @@
 const express = require('express');
+const path = require('path');
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send('Hello there, this is my API');
-    res.status(404).send('Error, please type in a correct url');
+    res.sendFile(path.join(__dirname, './index.html'));
     console.log('Starting API');
 });
 
-
 //////////////////Routes//////////////////
 const emoRouter = require('./routes/deep');
-app.use('/emo', emoRouter);
+app.use('/deep', emoRouter);
 
 const alphaRouter = require('./routes/alpha')
 app.use('/alpha', alphaRouter)
