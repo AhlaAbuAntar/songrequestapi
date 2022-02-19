@@ -13,6 +13,6 @@ const emoRouter = require('./routes/deep');
 app.use('/deep', emoRouter);
 
 const alphaRouter = require('./routes/alpha')
-app.use('/alpha', alphaRouter)
+app.use('/alpha', alphaRouter);
 //////////////////////////////////////////
 app.listen(process.env.PORT || 6969);
