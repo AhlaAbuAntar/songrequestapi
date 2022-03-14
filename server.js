@@ -9,8 +9,8 @@ app.get('/', (req, res) => {
 });
 
 //////////////////Routes//////////////////
-const emoRouter = require('./routes/deep');
-app.use('/deep', emoRouter);
+const deepRouter = require('./routes/deep');
+app.use('/deep', deepRouter);
 
 const alphaRouter = require('./routes/alpha')
 app.use('/alpha', alphaRouter);
